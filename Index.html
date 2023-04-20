@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+</head>
+<body>
+    <h1>Gaming sic</h1>
+
+    <ul id="mostrarProductos"></ul> 
+
+    <form id="agregarProductosEnStock">
+        <label for="producto">Selecciona el producto:</label>
+        <select class="producto" name="producto" required>
+            <option value="Memoria RAM">Memoria RAM</option>
+            <option value="Procesador">Procesador</option>
+            <option value="Mother">Motherboard</option>
+          </select>
+        <br>
+        <label for="">Modelo</label>   
+        <input type="text" name="modelo" class="modelo" required>
+        <br>
+        <label for="precio">Precio:</label>
+        <input type="number" name="precio" class="precio" required>
+        <br>
+        <label for="imagen">Imagen:</label>
+        <input type="file" name="imagen" class="imagen">
+        <br>
+        <br>
+        <button type="submit">Enviar a la lista de productos</button>
+    </form>
+
+    <div>
+        <h3>Filtrar Producto</h3>
+        <select id="filtrarPorProducto">
+            <option value="Memoria RAM">Memoria RAM</option>
+            <option value="Procesador">Procesador</option>
+            <option value="Mother">Motherboard</option>
+        </select>
+        <br>
+        <p id="mostrarPorTipo"></p>
+        <button onclick="filtrarPorProducto()">Filtrar</button>
+    </div>
+
+
+    <script src="js/terceraPreentrega.js"></script>
+</body>
+</html>
